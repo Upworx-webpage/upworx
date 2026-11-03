@@ -212,7 +212,7 @@ export const CookieBanner: React.FC<CookieBannerProps> = ({
                     {c.modalTitle}
                   </h3>
                   <p className="text-[11px] text-zinc-400 font-medium">
-                    {c.modalSubtitle}
+                    {c.cookieUpdatedDate}
                   </p>
                 </div>
               </div>
@@ -231,6 +231,14 @@ export const CookieBanner: React.FC<CookieBannerProps> = ({
 
             {/* Modal Content */}
             <div className="p-6 sm:p-7 overflow-y-auto space-y-6 text-sm">
+              <div className="bg-zinc-900/60 border border-zinc-800 p-4 rounded-sm">
+                <p className="text-zinc-400 font-medium text-xs mb-1">
+                  {c.cookieUpdatedDate}
+                </p>
+                <p className="text-white font-medium text-xs">
+                  {c.modalSubtitle}
+                </p>
+              </div>
               {/* 1 */}
               <div className="space-y-2">
                 <h4 className="font-bold text-white text-base">
@@ -462,9 +470,14 @@ export const CookieBanner: React.FC<CookieBannerProps> = ({
                 <div className="w-8 h-8 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center border border-teal-custom/20">
                   <Info className="w-4 h-4" />
                 </div>
-                <h3 className="text-lg font-black uppercase tracking-tight text-white">
-                  {c.privacyModalTitle}
-                </h3>
+                <div>
+                  <h3 className="text-lg font-black uppercase tracking-tight text-white">
+                    {c.privacyModalTitle}
+                  </h3>
+                  <p className="text-[11px] text-zinc-400 font-medium">
+                    {c.privacyUpdatedDate}
+                  </p>
+                </div>
               </div>
               <button
                 type="button"

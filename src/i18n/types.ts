@@ -354,6 +354,7 @@ export interface Translations {
     vacSelectedLabel: string;
     vacOtherOption: string;
     nameLabel: string;
+    namePlaceholder: string;
     phoneLabel: string;
     emailLabel: string;
     uploadLabel: string;
@@ -447,6 +448,7 @@ export interface Translations {
     saveChoice: string;
     modalTitle: string;
     modalSubtitle: string;
+    cookieUpdatedDate: string;
     close: string;
     sec1Title: string;
     sec1Text: string;

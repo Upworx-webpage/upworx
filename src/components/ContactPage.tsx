@@ -210,7 +210,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
           {/* Real Interactive Map focused on Riga address */}
           <div className="lg:col-span-7 relative bg-zinc-950 overflow-hidden rounded-sm border border-zinc-200/80 shadow-md min-h-[400px] sm:min-h-[480px]">
             <iframe
-              title="UPWORX Atrašanās vieta - Vienības gatve 109, Rīga"
+              title={`UPWORX - ${cp.officeAddressValue}`}
               src="https://maps.google.com/maps?q=Vien%C4%ABbas%20gatve%20109,%20R%C4%ABga,%20LV-1058&t=&z=16&ie=UTF8&iwloc=&output=embed"
               className="absolute inset-0 w-full h-full border-0"
               allowFullScreen={false}

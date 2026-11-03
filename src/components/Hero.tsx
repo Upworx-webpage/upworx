@@ -16,7 +16,7 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onCatalogClick }) =>
       <div className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-hidden">
         <img 
           src="/upworx-fons.webp" 
-          alt="UPWORX industriālās metālapstrādes iekārtas un CNC darbagaldi"
+          alt={`UPWORX - ${h.titlePart1} ${h.titlePart2} ${h.titlePart3} ${h.titlePart4}`}
           loading="eager"
           fetchPriority="high"
           decoding="sync"

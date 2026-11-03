@@ -139,7 +139,7 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
       {/* Mūsu misija un vērtības */}
       <OurValues />
 
-      {/* History Timeline */}
+      {/* Sadaļa "Izaugsmes hronoloģija / ATTĪSTĪBAS CEĻŠ" šobrīd paslēpta pēc pieprasījuma (iespējams atjaunot vēlāk):
       <section className="py-16 sm:py-20">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-20">
@@ -170,6 +170,7 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
           </div>
         </div>
       </section>
+      */}
     </div>
   );
 };

@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({
           href="/"
           className="flex items-center cursor-pointer group shrink-0"
           onClick={(e) => { e.preventDefault(); handleNav('home'); }}
-          aria-label="UPWORX Sākums"
+          aria-label={`UPWORX ${nav.home}`}
         >
           <svg width="34" height="34" viewBox="0 0 100 100" className="mr-2 sm:mr-3 sm:w-10 sm:h-10 shrink-0">
             <path d="M10 80 L30 60 L50 70 L80 30" fill="none" stroke="#2c9db1" strokeWidth="12" strokeLinecap="round" />
@@ -54,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({
 
         {/* Desktop Nav */}
         <nav 
-          aria-label="Galvenā navigācija"
+          aria-label="Navigation"
           className="hidden lg:flex items-center space-x-6 xl:space-x-8 text-xs xl:text-sm font-semibold uppercase tracking-widest text-white translate-x-4 xl:translate-x-8"
         >
           <a 

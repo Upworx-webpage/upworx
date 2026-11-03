@@ -268,7 +268,7 @@ export const CareerPage: React.FC<CareerPageProps> = () => {
                         required
                         value={applicantName}
                         onChange={(e) => setApplicantName(e.target.value)}
-                        placeholder="Jānis Bērziņš"
+                        placeholder={cp.namePlaceholder}
                         className="w-full bg-white border border-zinc-300 rounded-sm px-4 py-3 text-zinc-900 text-sm focus:outline-none focus:border-teal-custom focus:ring-1 focus:ring-teal-custom"
                       />
                     </div>
