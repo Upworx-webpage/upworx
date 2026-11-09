@@ -1,22 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Categories } from './components/Categories';
-import { FeaturedProducts } from './components/FeaturedProducts';
 import { ServicesSection } from './components/ServicesSection';
 import { AboutSection } from './components/AboutSection';
-import { Partners } from './components/Partners';
-import { ProjectsSection } from './components/ProjectsSection';
 import { ContactSection } from './components/ContactSection';
-import { ContactPage } from './components/ContactPage';
-import { MachineryPage } from './components/MachineryPage';
-import { AboutPage } from './components/AboutPage';
-import { CareerPage } from './components/CareerPage';
 import { Footer } from './components/Footer';
 import { CookieBanner } from './components/CookieBanner';
-import { ALL_MACHINERY } from './data/machineryData';
 import { useLanguage } from './context/LanguageContext';
 import { updateSEO } from './utils/seo';
+
+// Lazy-loaded subpages to minimize initial mobile bundle size
+const ContactPage = lazy(() => import('./components/ContactPage').then(m => ({ default: m.ContactPage })));
+const AboutPage = lazy(() => import('./components/AboutPage').then(m => ({ default: m.AboutPage })));
+const MachineryPage = lazy(() => import('./components/MachineryPage').then(m => ({ default: m.MachineryPage })));
+const CareerPage = lazy(() => import('./components/CareerPage').then(m => ({ default: m.CareerPage })));
 
 export default function App() {
   const { language, setLanguage } = useLanguage();
@@ -187,31 +185,33 @@ export default function App() {
           </>
         )}
 
-        {currentView === 'contact' && (
-          <ContactPage initialMachineName={selectedMachine} />
-        )}
+        <Suspense fallback={<div className="min-h-[60vh] bg-black flex items-center justify-center"><div className="w-8 h-8 border-2 border-teal-custom border-t-transparent rounded-full animate-spin" /></div>}>
+          {currentView === 'contact' && (
+            <ContactPage initialMachineName={selectedMachine} />
+          )}
 
-        {/* Iekārtas lapa (šobrīd paslēpta pēc pieprasījuma)
-        {currentView === 'machinery' && (
-          <MachineryPage 
-            selectedCategorySlug={selectedCategory || 'metalapstrade'}
-            selectedMachineId={selectedMachine}
-            onSelectCategory={(catId) => navigateTo('machinery', catId, null, false)}
-            onSelectMachine={(catId, machineId) => navigateTo('machinery', catId, machineId, true)}
-            onInquiryClick={(machineName) => navigateTo('contact', undefined, machineName, true)} 
-          />
-        )}
-        */}
+          {/* Iekārtas lapa (šobrīd paslēpta pēc pieprasījuma)
+          {currentView === 'machinery' && (
+            <MachineryPage 
+              selectedCategorySlug={selectedCategory || 'metalapstrade'}
+              selectedMachineId={selectedMachine}
+              onSelectCategory={(catId) => navigateTo('machinery', catId, null, false)}
+              onSelectMachine={(catId, machineId) => navigateTo('machinery', catId, machineId, true)}
+              onInquiryClick={(machineName) => navigateTo('contact', undefined, machineName, true)} 
+            />
+          )}
+          */}
 
-        {currentView === 'about' && (
-          <AboutPage onContactClick={() => navigateTo('contact')} />
-        )}
+          {currentView === 'about' && (
+            <AboutPage onContactClick={() => navigateTo('contact')} />
+          )}
 
-        {/* Karjera lapa (šobrīd paslēpta pēc pieprasījuma)
-        {currentView === 'career' && (
-          <CareerPage onContactClick={() => navigateTo('contact')} />
-        )}
-        */}
+          {/* Karjera lapa (šobrīd paslēpta pēc pieprasījuma)
+          {currentView === 'career' && (
+            <CareerPage onContactClick={() => navigateTo('contact')} />
+          )}
+          */}
+        </Suspense>
       </main>
       <Footer 
         onNavigate={navigateTo} 

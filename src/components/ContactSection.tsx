@@ -74,7 +74,7 @@ export const ContactSection: React.FC<ContactSectionProps> = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">{c.phoneLabel}</p>
+                  <p className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">{c.phoneLabel}</p>
                   <a href="tel:+37126474339" className="text-xl font-bold hover:text-teal-custom transition-colors block min-h-[44px] flex items-center">
                     +371 26474339
                   </a>
@@ -88,7 +88,7 @@ export const ContactSection: React.FC<ContactSectionProps> = () => {
                   </svg>
                 </div>
                 <div>
-                  <p className="text-[10px] text-gray-500 uppercase font-bold tracking-widest">{c.emailLabel}</p>
+                  <p className="text-[10px] text-gray-400 uppercase font-bold tracking-widest">{c.emailLabel}</p>
                   <a href="mailto:info@upworx.lv" className="text-xl font-bold hover:text-teal-custom transition-colors block min-h-[44px] flex items-center">
                     info@upworx.lv
                   </a>
