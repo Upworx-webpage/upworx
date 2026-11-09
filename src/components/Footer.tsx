@@ -155,7 +155,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
 
               <div className="sm:translate-x-[1cm] text-center sm:text-left">
                 <p>
-                  {f.developerLabel}:{' '}
+                  {f.developerLabel}{' '}
                   <a 
                     href="https://sageonmedia.eu" 
                     target="_blank" 
