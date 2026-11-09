@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "UPWORX",
+    "identifier": "did:web:upworx.lv",
+    "documentationUrl": "https://upworx.lv/llms.txt",
+    "logoUrl": "https://upworx.lv/images/logo_share.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:upworx.lv:resource:machinery-catalog",
+      "displayName": "UPWORX Industrial Machinery Catalog",
+      "type": "text/markdown",
+      "url": "https://upworx.lv/llms-full.txt",
+      "description": "Comprehensive industrial machinery catalog including CNC machining centers, fiber lasers, press brakes, and automation systems in the Baltics.",
+      "representativeQueries": [
+        "industrial machinery supplier in Latvia and Baltics",
+        "fiber laser cutting machines specifications and models",
+        "hydraulic press brake bending machines Durma Trumpf",
+        "CNC 5-axis milling machining centers",
+        "robotic welding and automation cells FANUC KUKA"
+      ],
+      "capabilities": [
+        "IndustrialMachineryCatalog",
+        "MachineryConsultation",
+        "TechnicalService"
+      ],
+      "tags": [
+        "machinery",
+        "cnc",
+        "fiber-laser",
+        "press-brake",
+        "automation",
+        "robotics",
+        "metalworking",
+        "baltics"
+      ]
+    },
+    {
+      "identifier": "urn:ai:upworx.lv:resource:llms-context",
+      "displayName": "UPWORX Agent Knowledge Context",
+      "type": "text/markdown",
+      "url": "https://upworx.lv/llms.txt",
+      "description": "Structured summary of UPWORX services, contact info, working hours, and FAQs for AI agents.",
+      "representativeQueries": [
+        "contact UPWORX for machinery consultation",
+        "working hours and office location of UPWORX in Riga",
+        "UPWORX warranty and technical support services"
+      ],
+      "capabilities": [
+        "CompanyKnowledge",
+        "ContactInformation",
+        "FAQ"
+      ],
+      "tags": [
+        "contact",
+        "company",
+        "faq",
+        "services"
+      ]
+    }
+  ]
+}

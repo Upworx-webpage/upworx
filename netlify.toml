@@ -37,6 +37,13 @@
     Cache-Control = "public, max-age=2592000"
 
 [[headers]]
+  for = "/.well-known/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Content-Type = "application/json; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
   for = "/*.webp"
   [headers.values]
     Cache-Control = "public, max-age=2592000"

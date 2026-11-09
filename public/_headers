@@ -19,6 +19,11 @@
 /favicon/*
   Cache-Control: public, max-age=2592000
 
+/.well-known/*
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json; charset=utf-8
+  Cache-Control: public, max-age=86400
+
 # Cache media
 /*.webp
   Cache-Control: public, max-age=2592000
