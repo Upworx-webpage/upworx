@@ -9,9 +9,9 @@
   },
   "entries": [
     {
-      "identifier": "urn:ai:upworx.lv:resource:machinery-catalog",
+      "identifier": "urn:air:upworx.lv:resource:machinery-catalog",
       "displayName": "UPWORX Industrial Machinery Catalog",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://upworx.lv/llms-full.txt",
       "description": "Comprehensive industrial machinery catalog including CNC machining centers, fiber lasers, press brakes, and automation systems in the Baltics.",
       "representativeQueries": [
@@ -38,9 +38,9 @@
       ]
     },
     {
-      "identifier": "urn:ai:upworx.lv:resource:llms-context",
+      "identifier": "urn:air:upworx.lv:resource:llms-context",
       "displayName": "UPWORX Agent Knowledge Context",
-      "type": "text/markdown",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://upworx.lv/llms.txt",
       "description": "Structured summary of UPWORX services, contact info, working hours, and FAQs for AI agents.",
       "representativeQueries": [
