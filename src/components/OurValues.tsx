@@ -27,16 +27,16 @@ export const OurValues: React.FC = () => {
           {values.map((v, i) => {
             const IconComponent = v.icon;
             return (
-              <div 
+              <article 
                 key={i} 
                 className="bg-zinc-50 p-8 sm:p-10 shadow-xs border border-zinc-200/80 rounded-sm hover:border-teal-custom hover:bg-white transition-all flex flex-col"
               >
-                <div className="w-12 h-12 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center mb-6 shrink-0">
+                <div className="w-12 h-12 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center mb-6 shrink-0" aria-hidden="true">
                   <IconComponent className="w-6 h-6" strokeWidth={2} />
                 </div>
-                <h4 className="text-xl font-black uppercase mb-3 tracking-tight text-zinc-900">{v.title}</h4>
+                <h3 className="text-xl font-black uppercase mb-3 tracking-tight text-zinc-900">{v.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{v.desc}</p>
-              </div>
+              </article>
             );
           })}
         </div>

@@ -19,7 +19,9 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onCatalogClick }) =>
           alt={`UPWORX - ${h.titlePart1} ${h.titlePart2} ${h.titlePart3} ${h.titlePart4}`}
           loading="eager"
           fetchPriority="high"
-          decoding="sync"
+          decoding="async"
+          width="791"
+          height="792"
           className="w-full h-full object-cover object-[center_20%] select-none"
           style={{ objectPosition: 'center 20%', objectFit: 'cover' }}
         />
@@ -47,19 +49,21 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick, onCatalogClick }) =>
             {onCatalogClick && (
               <button 
                 id="hero-catalog-btn"
+                type="button"
                 onClick={onCatalogClick}
-                className="bg-teal-custom hover:bg-teal-600 text-white px-7 py-3.5 text-xs sm:text-[13px] font-bold uppercase tracking-widest transition-colors rounded-sm flex items-center justify-center cursor-pointer shadow-lg shadow-teal-950/50"
+                className="bg-teal-custom hover:bg-teal-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black text-white px-7 py-3.5 text-xs sm:text-[13px] font-bold uppercase tracking-widest transition-colors rounded-sm flex items-center justify-center cursor-pointer shadow-lg shadow-teal-950/50 min-h-[44px]"
               >
                 {h.viewMachinery}
-                <svg className="ml-2.5 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="ml-2.5 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </button>
             )}
             <button 
               id="hero-contact-btn"
+              type="button"
               onClick={onContactClick}
-              className={`${onCatalogClick ? 'border-2 border-white hover:bg-white hover:text-black text-white' : 'bg-teal-custom hover:bg-teal-600 text-white shadow-lg shadow-teal-950/50'} px-7 py-3.5 text-xs sm:text-[13px] font-bold uppercase tracking-widest transition-colors rounded-sm cursor-pointer flex items-center justify-center`}
+              className={`${onCatalogClick ? 'border-2 border-white hover:bg-white hover:text-black text-white' : 'bg-teal-custom hover:bg-teal-600 text-white shadow-lg shadow-teal-950/50'} focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black px-7 py-3.5 text-xs sm:text-[13px] font-bold uppercase tracking-widest transition-colors rounded-sm cursor-pointer flex items-center justify-center min-h-[44px]`}
             >
               {h.getConsultation}
             </button>

@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://upworx.lv/</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Machinery Catalog Root -->
   <url>
     <loc>https://upworx.lv/iekartas</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -20,25 +20,25 @@
   <!-- Categories -->
   <url>
     <loc>https://upworx.lv/iekartas/metalapstrade</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/lazera-griesana</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/cnc-iekartas</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/automatizacija</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -46,25 +46,25 @@
   <!-- Metalapstrade Machines -->
   <url>
     <loc>https://upworx.lv/iekartas/metalapstrade/trumpf-trubend-5170</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/metalapstrade/durma-ad-r-30175</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/metalapstrade/ermaksan-speed-bend-pro</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/metalapstrade/safan-darley-ebalance-100</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -72,25 +72,25 @@
   <!-- Lāzergriešana Machines -->
   <url>
     <loc>https://upworx.lv/iekartas/lazera-griesana/bystronic-bystar-fiber-15kw</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/lazera-griesana/trumpf-trulaser-3030-fiber</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/lazera-griesana/amada-ventis-3015-aj</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/lazera-griesana/hsg-laser-g3015x</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -98,25 +98,25 @@
   <!-- CNC Machines -->
   <url>
     <loc>https://upworx.lv/iekartas/cnc-iekartas/dmg-mori-dmu-75-monoblock</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/cnc-iekartas/haas-vf-4ss</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/cnc-iekartas/mazak-integrex-i-200</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/cnc-iekartas/doosan-puma-gt2600</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -124,25 +124,25 @@
   <!-- Automatizācija Machines -->
   <url>
     <loc>https://upworx.lv/iekartas/automatizacija/fanuc-robot-cell-m20id</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/automatizacija/kuka-kr-cybertech-nano</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/automatizacija/yaskawa-motoman-gp25</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://upworx.lv/iekartas/automatizacija/abb-irb-2600</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -150,20 +150,34 @@
   <!-- Core Informational Pages -->
   <url>
     <loc>https://upworx.lv/par-mums</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://upworx.lv/karjera</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://upworx.lv/kontakti</loc>
-    <lastmod>2026-03-08</lastmod>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- Legal & Policies -->
+  <url>
+    <loc>https://upworx.lv/privatuma-politika</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://upworx.lv/sikdatnu-politika</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

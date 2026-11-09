@@ -8,7 +8,11 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
     <meta name="author" content="UPWORX" />
     <meta name="theme-color" content="#09090b" />
-    <link rel="icon" type="image/svg+xml" href="/logo-icon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://upworx.lv/" />
@@ -19,26 +23,31 @@
     <link rel="alternate" hreflang="ru" href="https://upworx.lv/" />
     <link rel="alternate" hreflang="x-default" href="https://upworx.lv/" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Open Graph / Facebook & WhatsApp -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://upworx.lv/" />
     <meta property="og:title" content="UPWORX | Industriālie Risinājumi un Iekārtas" />
     <meta property="og:description" content="Industriālo iekārtu, CNC darbgaldu, lāzergriešanas un automatizācijas risinājumu piegāde, uzstādīšana un serviss visā Baltijā." />
-    <meta property="og:image" content="https://upworx.lv/Hero-upworx.webp" />
+    <meta property="og:image" content="https://upworx.lv/images/logo_share.png" />
+    <meta property="og:image:secure_url" content="https://upworx.lv/images/logo_share.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="122" />
+    <meta property="og:image:height" content="122" />
+    <meta property="og:image:alt" content="UPWORX Industriālie Risinājumi un Iekārtas" />
     <meta property="og:site_name" content="UPWORX" />
     <meta property="og:locale" content="lv_LV" />
 
     <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <meta name="twitter:url" content="https://upworx.lv/" />
     <meta name="twitter:title" content="UPWORX | Industriālie Risinājumi un Iekārtas" />
     <meta name="twitter:description" content="Industriālo iekārtu, CNC darbgaldu, lāzergriešanas un automatizācijas risinājumu piegāde, uzstādīšana un serviss visā Baltijā." />
-    <meta name="twitter:image" content="https://upworx.lv/Hero-upworx.webp" />
+    <meta name="twitter:image" content="https://upworx.lv/images/logo_share.png" />
 
     <!-- Critical Performance Preloads -->
     <link rel="preload" href="/fonts/inter-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/montserrat-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/Hero-upworx.webp" as="image" type="image/webp" fetchpriority="high" />
+    <link rel="preload" href="/upworx-fons.webp" as="image" type="image/webp" fetchpriority="high" />
 
     <!-- Initial Structured Data JSON-LD Schema -->
     <script id="seo-jsonld" type="application/ld+json">
@@ -52,7 +61,7 @@
           "legalName": "SIA UPWORX",
           "url": "https://upworx.lv",
           "logo": "https://upworx.lv/logo.svg",
-          "image": "https://upworx.lv/Hero-upworx.webp",
+          "image": "https://upworx.lv/upworx-fons.webp",
           "description": "Industriālo metālapstrādes iekārtu, CNC darbgaldu, lāzergriešanas un ražošanas automatizācijas risinājumi.",
           "telephone": "+37126474339",
           "email": "info@upworx.lv",
@@ -60,8 +69,22 @@
             "@type": "PostalAddress",
             "addressCountry": "LV",
             "addressLocality": "Rīga",
-            "streetAddress": "Dzelzavas iela 117"
+            "streetAddress": "Vienības gatve 109",
+            "postalCode": "LV-1058"
           },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 56.9113,
+            "longitude": 24.0858
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+              "opens": "08:30",
+              "closes": "17:30"
+            }
+          ],
           "areaServed": ["Latvia", "Lithuania", "Estonia"],
           "priceRange": "€€€€"
         },

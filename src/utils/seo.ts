@@ -9,7 +9,7 @@ export interface SEOProps {
 }
 
 const SITE_URL = 'https://upworx.lv';
-const DEFAULT_IMAGE = `${SITE_URL}/Hero-upworx.webp`;
+const DEFAULT_IMAGE = `${SITE_URL}/images/logo_share.png`;
 
 export const SEO_DATA = {
   LV: {
@@ -255,11 +255,22 @@ export function updateSEO({ view, categorySlug, machineId, language }: SEOProps)
   setMeta('property', 'og:title', title);
   setMeta('property', 'og:description', description);
   setMeta('property', 'og:image', ogImage);
+  setMeta('property', 'og:image:secure_url', ogImage);
+  if (ogImage.includes('logo_share.png')) {
+    setMeta('property', 'og:image:type', 'image/png');
+    setMeta('property', 'og:image:width', '122');
+    setMeta('property', 'og:image:height', '122');
+    setMeta('name', 'twitter:card', 'summary');
+  } else {
+    setMeta('property', 'og:image:width', '1200');
+    setMeta('property', 'og:image:height', '630');
+    setMeta('name', 'twitter:card', 'summary_large_image');
+  }
+  setMeta('property', 'og:image:alt', title);
   setMeta('property', 'og:site_name', langData.siteName);
   setMeta('property', 'og:locale', langData.locale);
 
   // Twitter Cards
-  setMeta('name', 'twitter:card', 'summary_large_image');
   setMeta('name', 'twitter:url', fullCanonicalUrl);
   setMeta('name', 'twitter:title', title);
   setMeta('name', 'twitter:description', description);
@@ -276,6 +287,7 @@ export function updateSEO({ view, categorySlug, machineId, language }: SEOProps)
 
   // JSON-LD Structured Data Schema Markup
   updateSchemaJsonLd({
+    view,
     fullCanonicalUrl,
     title,
     description,
@@ -286,6 +298,7 @@ export function updateSEO({ view, categorySlug, machineId, language }: SEOProps)
 }
 
 function updateSchemaJsonLd({
+  view,
   fullCanonicalUrl,
   title,
   description,
@@ -293,6 +306,7 @@ function updateSchemaJsonLd({
   activeMachine,
   language
 }: {
+  view: 'home' | 'contact' | 'machinery' | 'about' | 'career';
   fullCanonicalUrl: string;
   title: string;
   description: string;
@@ -308,7 +322,7 @@ function updateSchemaJsonLd({
     legalName: 'SIA UPWORX',
     url: 'https://upworx.lv',
     logo: 'https://upworx.lv/logo.svg',
-    image: 'https://upworx.lv/Hero-upworx.webp',
+    image: 'https://upworx.lv/upworx-fons.webp',
     description: 'Industriālo metālapstrādes iekārtu, CNC darbgaldu, lāzergriešanas un ražošanas automatizācijas risinājumi.',
     telephone: '+37126474339',
     email: 'info@upworx.lv',
@@ -316,14 +330,41 @@ function updateSchemaJsonLd({
       '@type': 'PostalAddress',
       addressCountry: 'LV',
       addressLocality: 'Rīga',
-      streetAddress: 'Dzelzavas iela 117'
+      streetAddress: 'Vienības gatve 109',
+      postalCode: 'LV-1058'
     },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 56.9113,
+      longitude: 24.0858
+    },
+    openingHoursSpecification: [
+      {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        opens: '08:30',
+        closes: '17:30'
+      }
+    ],
     areaServed: [
       { '@type': 'Country', name: 'Latvia' },
       { '@type': 'Country', name: 'Lithuania' },
       { '@type': 'Country', name: 'Estonia' }
     ],
     priceRange: '€€€€'
+  };
+
+  const pageSchema = {
+    '@context': 'https://schema.org',
+    '@type': view === 'contact' ? 'ContactPage' : view === 'about' ? 'AboutPage' : 'WebPage',
+    '@id': `${fullCanonicalUrl}#webpage`,
+    url: fullCanonicalUrl,
+    name: title,
+    description: description,
+    isPartOf: {
+      '@id': 'https://upworx.lv/#website'
+    },
+    inLanguage: language === 'RU' ? 'ru-RU' : language === 'ENG' ? 'en-US' : 'lv-LV'
   };
 
   const websiteSchema = {
@@ -397,7 +438,7 @@ function updateSchemaJsonLd({
     itemListElement: breadcrumbsList
   };
 
-  const graphList: unknown[] = [orgSchema, websiteSchema, breadcrumbSchema];
+  const graphList: unknown[] = [orgSchema, websiteSchema, pageSchema, breadcrumbSchema];
 
   // If viewing a machine detail page, append Product schema
   if (activeMachine) {

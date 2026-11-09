@@ -108,8 +108,9 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Poga: PIEPRASĪT CENU - redzama no sm ekrāniem, mobilajā slēpta, jo atrodas izvēlnē */}
           <button 
             id="header-start-collab-btn"
+            type="button"
             onClick={() => handleNav('contact')}
-            className="hidden sm:inline-flex items-center justify-center bg-teal-custom hover:bg-teal-600 text-white sm:px-5 sm:py-2.5 rounded-sm sm:text-xs font-bold uppercase sm:tracking-widest transition-colors shadow-md shadow-teal-900/20 cursor-pointer whitespace-nowrap shrink-0"
+            className="hidden sm:inline-flex items-center justify-center bg-teal-custom hover:bg-teal-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-black text-white sm:px-5 sm:py-2.5 rounded-sm sm:text-xs font-bold uppercase sm:tracking-widest transition-colors shadow-md shadow-teal-900/20 cursor-pointer whitespace-nowrap shrink-0 min-h-[44px]"
           >
             {nav.requestPrice}
           </button>
@@ -129,7 +130,8 @@ export const Header: React.FC<HeaderProps> = ({
                   id={`lang-btn-${lang.toLowerCase()}`}
                   type="button"
                   onClick={() => handleLangSelect(lang)}
-                  className={`px-2 py-1 rounded-xs transition-all duration-150 cursor-pointer text-[11px] font-black uppercase ${
+                  aria-pressed={isActive}
+                  className={`px-2.5 py-1.5 rounded-xs transition-all duration-150 cursor-pointer text-[11px] font-black uppercase focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 ${
                     isActive
                       ? 'bg-teal-custom text-white shadow-xs'
                       : 'text-zinc-400 hover:text-white hover:bg-white/10'
@@ -144,11 +146,13 @@ export const Header: React.FC<HeaderProps> = ({
           
           <button 
             id="mobile-menu-toggle"
+            type="button"
             aria-label="Toggle Navigation Menu"
+            aria-expanded={mobileMenuOpen}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden text-white hover:text-teal-custom p-1.5 focus:outline-none shrink-0"
+            className="lg:hidden text-white hover:text-teal-custom min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded-sm shrink-0"
           >
-            {mobileMenuOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" /> : <Menu className="w-6 h-6 sm:w-7 sm:h-7" />}
+            {mobileMenuOpen ? <X className="w-6 h-6 sm:w-7 sm:h-7" aria-hidden="true" /> : <Menu className="w-6 h-6 sm:w-7 sm:h-7" aria-hidden="true" />}
           </button>
         </div>
       </div>

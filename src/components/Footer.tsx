@@ -34,16 +34,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
               <a 
                 href="#facebook" 
                 aria-label="Facebook"
-                className="w-9 h-9 bg-zinc-900 flex items-center justify-center hover:bg-teal-custom transition-colors rounded-sm"
+                className="w-11 h-11 bg-zinc-900 flex items-center justify-center hover:bg-teal-custom transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
               >
-                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
               </a>
               <a 
                 href="#linkedin" 
                 aria-label="LinkedIn"
-                className="w-9 h-9 bg-zinc-900 flex items-center justify-center hover:bg-teal-custom transition-colors rounded-sm"
+                className="w-11 h-11 bg-zinc-900 flex items-center justify-center hover:bg-teal-custom transition-colors rounded-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
               >
-                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M22.23 0H1.77C.8 0 0 .8 0 1.77v20.46C0 23.2.8 24 1.77 24h20.46c.97 0 1.77-.8 1.77-1.77V1.77C24 .8 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.55c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zm15.11 12.9h-3.56v-5.61c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96v5.71h-3.56V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28z"/></svg>
+                 <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.23 0H1.77C.8 0 0 .8 0 1.77v20.46C0 23.2.8 24 1.77 24h20.46c.97 0 1.77-.8 1.77-1.77V1.77C24 .8 23.2 0 22.23 0zM7.12 20.45H3.56V9h3.56v11.45zM5.34 7.55c-1.14 0-2.06-.92-2.06-2.06 0-1.14.92-2.06 2.06-2.06 1.14 0 2.06.92 2.06 2.06 0 1.14-.92 2.06-2.06 2.06zm15.11 12.9h-3.56v-5.61c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.15 1.46-2.15 2.96v5.71h-3.56V9h3.42v1.56h.05c.48-.9 1.63-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.28z"/></svg>
               </a>
             </div>
           </div>
@@ -125,6 +125,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 xl:gap-10 items-center">
               <div className="sm:col-span-2 flex items-center justify-center gap-5 text-center">
                 <button 
+                  type="button"
                   onClick={() => {
                     if (onOpenPrivacyPolicy) {
                       onOpenPrivacyPolicy();
@@ -132,12 +133,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
                       onNavigate('about');
                     }
                   }} 
-                  className="hover:text-teal-custom transition-colors cursor-pointer"
+                  className="hover:text-teal-custom transition-colors cursor-pointer min-h-[44px] py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded-xs inline-flex items-center"
                 >
                   {f.privacyPolicy}
                 </button>
-                <span className="text-zinc-600 select-none">|</span>
+                <span className="text-zinc-600 select-none" aria-hidden="true">|</span>
                 <button 
+                  type="button"
                   onClick={() => {
                     if (onOpenCookieSettings) {
                       onOpenCookieSettings();
@@ -145,7 +147,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenCookieSettings
                       onNavigate('about');
                     }
                   }} 
-                  className="hover:text-teal-custom transition-colors cursor-pointer"
+                  className="hover:text-teal-custom transition-colors cursor-pointer min-h-[44px] py-2 px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded-xs inline-flex items-center"
                 >
                   {f.cookiePolicy}
                 </button>

@@ -1,0 +1,42 @@
+# UPWORX Industriālie Risinājumi
+
+> Industriālo metālapstrādes iekārtu, CNC apstrādes centru, šķiedras lāzergriešanas iekārtu un robotizētās ražošanas automatizācijas piegāde, uzstādīšana un serviss Baltijā (Latvijā, Lietuvā, Igaunijā).
+
+## Galvenā Informācija
+- **Uzņēmums:** SIA UPWORX
+- **Mājaslapa:** https://upworx.lv
+- **Nozare:** Industriālās iekārtas, metālapstrāde, CNC, lāzertehnoloģijas, robotika un automatizācija
+- **Reģions:** Baltijas valstis (Latvija, Lietuva, Igaunija)
+- **Tālrunis:** +371 26 474 339
+- **E-pasts:** info@upworx.lv
+- **Adrese:** Vienības gatve 109, Rīga, LV-1058, Latvija
+- **Darba laiks:** Pirmdiena - Piektdiena: 08:30 - 17:30
+
+## Galvenie Pakalpojumi un Piedāvājums
+- **Metālapstrādes iekārtas:** Hidrauliskās un elektriskās lokšņu liekšanas preses, giljotīnas šķēres, profilu liecēji.
+- **Šķiedras (Fiber) lāzergriešana:** 2D lokšņu un cauruļu lāzergriešanas iekārtas ar jaudu līdz 30kW.
+- **CNC apstrādes centri:** 3-asu un 5-asu vertikālie un horizontālie CNC frēzēšanas centri, kā arī augstas precizitātes virpas.
+- **Ražošanas automatizācija:** Robotizētās metināšanas, apkalpošanas un palešu kraušanas šūnas (FANUC, KUKA, Yaskawa, ABB).
+- **Pilns servisa cikls:** Tehnoloģiskais audits, iekārtu piegāde, uzstādīšana, kalibrēšana, operatoru apmācība un garantijas/pēcgarantijas serviss.
+
+## Lapu Maršruti (URLs)
+- [Sākums](https://upworx.lv/): Uzņēmuma pārskats, vadošie partneri un risinājumi.
+- [Iekārtu katalogs](https://upworx.lv/iekartas): Pilns pieejamo industriālo iekārtu klāsts.
+- [Metālapstrādes iekārtas](https://upworx.lv/iekartas/metalapstrade): Lokšņu liekšana un giljotīnas.
+- [Lāzergriešanas iekārtas](https://upworx.lv/iekartas/lazera-griesana): Šķiedras lāzeri loksnēm un caurulēm.
+- [CNC darbgaldi](https://upworx.lv/iekartas/cnc-iekartas): CNC frēzēšanas un virpošanas centri.
+- [Automatizācija](https://upworx.lv/iekartas/automatizacija): Industriālie roboti un automatizācijas šūnas.
+- [Par mums](https://upworx.lv/par-mums): Informācija par uzņēmuma komandu, pieredzi un vērtībām.
+- [Karjera](https://upworx.lv/karjera): Karjeras iespējas inženieriem un tehniskajiem speciālistiem.
+- [Kontakti](https://upworx.lv/kontakti): Saziņas forma, adrese un tālruņi konsultācijām.
+
+## Biežāk Uzdotie Jautājumi (BUJ / FAQ)
+- **Kādu atbalstu UPWORX nodrošina pēc iekārtas iegādes?**
+  Nodrošinām pilnu uzstādīšanu, nodošanu ekspluatācijā, personāla apmācību un sertificētu tehnisko servisu ar oriģinālo rezerves daļu pieejamību.
+- **Kādās valstīs UPWORX sniedz pakalpojumus?**
+  Primāri visās trīs Baltijas valstīs: Latvijā, Lietuvā un Igaunijā.
+- **Vai ir iespējams saņemt individuālu tehnisko konsultāciju?**
+  Jā, mūsu inženieri veic ražošanas vajadzību izvērtējumu un sagatavo pielāgotu tehnisko un ekonomisko risinājumu.
+
+## Detalizēta Informācija
+- [Pilna informācija AI aģentiem](https://upworx.lv/llms-full.txt): Paplašināts iekārtu specifikāciju un tehnisko parametru apraksts.

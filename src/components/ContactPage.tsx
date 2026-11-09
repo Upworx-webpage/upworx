@@ -90,6 +90,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
           <img 
             src="/hero_kontakti.jpg" 
             alt="UPWORX Technology Center" 
+            width="1376"
+            height="768"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover select-none"
             referrerPolicy="no-referrer"
           />
@@ -110,15 +115,15 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
       </section>
 
       <div className="container mx-auto px-6 py-12 lg:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-20 lg:mb-24 items-stretch">
+        <section aria-labelledby="contact-details-heading" className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-20 lg:mb-24 items-stretch">
           {/* Refined Contact Info Card */}
           <div className="lg:col-span-5 bg-zinc-50 border border-zinc-200/90 rounded-sm p-6 sm:p-8 flex flex-col justify-between shadow-sm">
             <div>
               {/* Company Header */}
               <div className="border-b border-zinc-200 pb-5 mb-6">
                 <div className="flex items-center gap-2.5 mb-1.5">
-                  <Building2 className="w-5 h-5 text-teal-custom shrink-0" />
-                  <h3 className="text-xl sm:text-2xl font-black text-zinc-950 uppercase tracking-tight">{cp.companyName}</h3>
+                  <Building2 className="w-5 h-5 text-teal-custom shrink-0" aria-hidden="true" />
+                  <h2 id="contact-details-heading" className="text-xl sm:text-2xl font-black text-zinc-950 uppercase tracking-tight">{cp.companyName}</h2>
                 </div>
                 <p className="text-xs font-bold text-teal-custom uppercase tracking-wider pl-7.5">
                   {cp.regNumber}
@@ -129,11 +134,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20">
+                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20" aria-hidden="true">
                     <MapPin className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.officeAddressTitle}</h4>
+                    <h3 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.officeAddressTitle}</h3>
                     <p className="text-[15px] font-bold text-zinc-900 leading-snug">
                       {cp.officeAddressValue}
                     </p>
@@ -141,24 +146,24 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
                       href="https://www.google.com/maps/search/?api=1&query=Vien%C4%ABbas+gatve+109,+R%C4%ABga,+LV-1058"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center text-xs font-bold text-teal-custom hover:text-teal-700 mt-1 transition-colors"
+                      className="inline-flex items-center text-xs font-bold text-teal-custom hover:text-teal-700 mt-1 transition-colors min-h-[44px] py-1"
                     >
                       <span>{cp.openGoogleMaps}</span>
-                      <ExternalLink className="w-3 h-3 ml-1" />
+                      <ExternalLink className="w-3 h-3 ml-1" aria-hidden="true" />
                     </a>
                   </div>
                 </div>
 
                 {/* Phone */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20">
+                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20" aria-hidden="true">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.phoneTitle}</h4>
+                    <h3 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.phoneTitle}</h3>
                     <a 
                       href="tel:+37126474339" 
-                      className="text-[16px] font-bold text-zinc-900 hover:text-teal-custom transition-colors block leading-snug"
+                      className="text-[16px] font-bold text-zinc-900 hover:text-teal-custom transition-colors block leading-snug min-h-[44px] py-1"
                     >
                       +371 26474339
                     </a>
@@ -168,14 +173,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
 
                 {/* Email */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20">
+                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20" aria-hidden="true">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.emailTitle}</h4>
+                    <h3 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.emailTitle}</h3>
                     <a 
                       href="mailto:info@upworx.lv" 
-                      className="text-[15px] font-bold text-teal-custom hover:text-teal-700 transition-colors block leading-snug"
+                      className="text-[15px] font-bold text-teal-custom hover:text-teal-700 transition-colors block leading-snug min-h-[44px] py-1"
                     >
                       info@upworx.lv
                     </a>
@@ -185,11 +190,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
 
                 {/* Working hours */}
                 <div className="flex items-start gap-3.5">
-                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20">
+                  <div className="w-9 h-9 rounded-sm bg-teal-custom/10 text-teal-custom flex items-center justify-center shrink-0 mt-0.5 border border-teal-custom/20" aria-hidden="true">
                     <Clock className="w-4 h-4" />
                   </div>
                   <div>
-                    <h4 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.hoursTitle}</h4>
+                    <h3 className="text-[11px] font-bold text-zinc-500 uppercase tracking-widest mb-1">{cp.hoursTitle}</h3>
                     <p className="text-[14px] font-bold text-zinc-900 leading-snug">
                       {cp.hoursWeekdays}
                     </p>
@@ -233,18 +238,18 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
                 className="text-[10px] font-bold text-teal-custom hover:text-teal-300 uppercase tracking-wider transition-colors inline-flex items-center ml-4"
               >
                 <span>{cp.openFullMap}</span>
-                <ExternalLink className="w-3 h-3 ml-1" />
+                <ExternalLink className="w-3 h-3 ml-1" aria-hidden="true" />
               </a>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Consultation Form */}
-        <div id="contact-form" className="w-full max-w-[calc(560px+2.5cm)] mx-auto bg-teal-custom p-7 sm:p-10 lg:py-14 lg:px-11 rounded-sm shadow-2xl scroll-mt-28">
+        <section id="contact-form" aria-labelledby="contact-form-heading" className="w-full max-w-[calc(560px+2.5cm)] mx-auto bg-teal-custom p-7 sm:p-10 lg:py-14 lg:px-11 rounded-sm shadow-2xl scroll-mt-28">
           <div>
-            <h3 className="text-white text-2xl sm:text-3xl font-black uppercase mb-3 tracking-tight">
+            <h2 id="contact-form-heading" className="text-white text-2xl sm:text-3xl font-black uppercase mb-3 tracking-tight">
               {cp.formTitle}
-            </h3>
+            </h2>
             <p className="text-white/90 text-sm sm:text-base mb-8 font-normal">
               {cp.formSubtitle}
             </p>
@@ -373,7 +378,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ initialMachineName }) 
               </form>
             )}
           </div>
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -22,6 +22,11 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
           <img 
             src="/hero_par_mums.jpg" 
             alt="UPWORX Industrial Technologies" 
+            width="1376"
+            height="768"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover select-none"
             referrerPolicy="no-referrer"
           />
@@ -66,24 +71,36 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
                 className="w-full h-52 sm:h-60 object-cover rounded-sm shadow-sm" 
                 alt="Industrial laser technology" 
                 loading="lazy"
+                decoding="async"
+                width="780"
+                height="439"
               />
               <img 
                 src="/upworx-2.webp" 
                 className="w-full h-52 sm:h-60 object-cover rounded-sm shadow-sm" 
                 alt="CNC processing precision" 
                 loading="lazy"
+                decoding="async"
+                width="780"
+                height="439"
               />
               <img 
                 src="/upworx-3.webp" 
                 className="w-full h-52 sm:h-60 object-cover rounded-sm shadow-sm" 
                 alt="Industrial manufacturing machinery" 
                 loading="lazy"
+                decoding="async"
+                width="780"
+                height="439"
               />
               <img 
                 src="/upworx-4.webp" 
                 className="w-full h-52 sm:h-60 object-cover rounded-sm shadow-sm" 
                 alt="Industrial automation and robots" 
                 loading="lazy"
+                decoding="async"
+                width="780"
+                height="439"
               />
             </div>
           </div>

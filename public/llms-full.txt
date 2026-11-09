@@ -1,0 +1,95 @@
+# UPWORX Industriālie Risinājumi — Pilna Tehniskā Informācija (llms-full.txt)
+
+## Par Uzņēmumu
+SIA UPWORX ir industriālo iekārtu, metālapstrādes tehnoloģiju, CNC darbgaldu un robotizētās ražošanas automatizācijas risinājumu nodrošinātājs Baltijas tirgū (Latvija, Lietuva, Igaunija).
+- Juridiskais un faktiskais nosaukums: SIA UPWORX
+- Galvenais birojs un adrese: Vienības gatve 109, Rīga, LV-1058, Latvija
+- Tālrunis: +371 26 474 339
+- E-pasts: info@upworx.lv
+- Darba laiks: Pirmdiena - Piektdiena: 08:30 - 17:30 (EET)
+- Mājaslapas URL: https://upworx.lv
+
+---
+
+## Pārstāvētās Produktu Kategorijas un Iekārtu Klāsts
+
+### 1. Metālapstrādes Iekārtas (Lokšņu apstrāde)
+- **Hidrauliskās un elektriskās lokšņu liekšanas preses (Press Brakes):**
+  - Modeļi un sērijas: TRUMPF TruBend sērija (piem. TruBend 5170), Durma AD-R sērija (piem. AD-R 30175), Ermaksan Speed-Bend PRO.
+  - Spēks: no 40 tonnām līdz 1000+ tonnām.
+  - Liekšanas garums: no 1000 mm līdz 6000 mm.
+  - Vadības sistēmas: Delem (DA-66S, DA-69T), Cybelec, ESA.
+  - Precizitāte: CNC kontrolēta liekšanas leņķa mērīšanas un kompensācijas sistēma (Crowing system).
+- **Giljotīnas šķēres (Hydraulic Guillotine Shears):**
+  - Griešanas biezums: tēraudam līdz 20 mm, nerūsējošajam tēraudam līdz 12 mm.
+  - Griešanas garums: 2000 mm līdz 4000 mm.
+  - Aprīkojums: CNC regulējams asmeņu atstatums, pneimatiskais lokšņu atbalsts aizmugurē.
+
+### 2. Šķiedras (Fiber) Lāzergriešanas Iekārtas
+- **Lokšņu lāzergriešana:**
+  - Lāzera avoti: Šķiedras lāzeri (Fiber laser) ar jaudu no 3 kW līdz 30 kW (IPG, Raycus, Maxphotonics).
+  - Galda izmēri: 1500 x 3000 mm, 2000 x 4000 mm, 2000 x 6000 mm ar automātisko palešu maiņas sistēmu (Dual shuttle table).
+  - Apstrādājamie materiāli: Melnais tērauds (līdz 50 mm), nerūsējošais tērauds (līdz 40 mm), alumīnijs, varš, misiņš.
+  - Lāzergalvas ar autofokusu un inteliģento caurduršanas kontroli (Precitec, Raytools).
+- **Cauruļu un profilu lāzergriešana:**
+  - Apaļu, kvadrātveida, taisnstūra un īpaša profila cauruļu 3D griešana.
+  - Automātiskās cauruļu padeves un saišķu iekraušanas sistēmas.
+
+### 3. CNC Frēzēšanas un Virpošanas Darbgaldi
+- **Vertikālie un 5-asu apstrādes centri:**
+  - 3-asu, 4-asu un vienlaicīgas 5-asu (simultaneous 5-axis) apstrādes centri.
+  - Vārpstas apgriezieni līdz 24 000 rpm, dzesēšana caur vārpstu (IKZ līdz 70 bar).
+  - Vadības sistēmas: Siemens SINUMERIK ONE / 840D sl, Heidenhain TNC 640, FANUC 31i.
+- **CNC Virpas un Virpošanas-Frēzēšanas Centri:**
+  - Slīpās gultnes virpas ar aktīvajiem instrumentiem (Live tooling), C un Y asīm.
+  - Apstrādes centri ar pretvārpstu (Sub-spindle) kompleksu detaļu apstrādei vienā uzstādījumā.
+
+### 4. Ražošanas Automatizācija un Industriālā Robotika
+- **Robotizētās metināšanas šūnas:**
+  - MIG/MAG, TIG un lāgermetināšanas roboti ar rotācijas pozicionieriem un sinhronizētām asīm.
+  - Zīmoli: FANUC, KUKA, Yaskawa Motoman, ABB.
+- **Iekārtu apkalpošanas roboti (Machine Tending):**
+  - Lokšņu liekšanas presu un CNC darbgaldu automātiska apkalpošana.
+- **Palešu kraušanas un materiālu plūsmas robotika:**
+  - Detaļu šķirošana, palešu kraušana (Palletizing), integrācija ar noliktavas pārvaldības sistēmām.
+
+---
+
+## Tehniskā Servisa un Sadarbības Process
+
+1. **Tehnoloģiskā konsultācija un audits:**
+   UPWORX inženieri analizē klienta esošo ražošanas procesu, izgatavojamās detaļas un ražošanas apjomus, lai ieteiktu optimālāko iekārtas konfigurāciju.
+2. **Piegāde un loģistika:**
+   Iekārtu transportēšana no ražotāja līdz klienta ražotnei, ietverot lielgabarīta kravu loģistiku un apdrošināšanu.
+3. **Uzstādīšana un montāža:**
+   Iekārtu izvietošana uz pamatiem, līmeņošana, elektrisko un pneimatisko savienojumu izveide un precizitātes kalibrēšana ar sertificētiem mērinstrumentiem.
+4. **Nodošana ekspluatācijā un testēšana:**
+   Testa detaļu izgatavošana, griešanas/liekšanas programmu iestatīšana un nodošanas-pieņemšanas akta parakstīšana.
+5. **Personāla un operatoru apmācība:**
+   Iekārtas operatoru un programmētāju padziļināta apmācība darbam ar konkrētās iekārtas CNC vadības pulti un CAM programmatūru.
+6. **Garantija un servisa atbalsts:**
+   Regulāras tehniskās apkopes, ātra reaģēšana kļūmju gadījumā (fiziski un attālināti diagnostikas pieslēgumi) un oriģinālo rezerves daļu piegāde.
+
+---
+
+## Biežāk Uzdotie Jautājumi un Atbildes (FAQ)
+
+**J: Vai UPWORX piedāvā iekārtu iegādi līzingā vai ar ES fondu līdzfinansējumu?**
+A: Jā, mēs sadarbojamies ar vadošajām Baltijas līzinga kompānijām un palīdzam sagatavot visu nepieciešamo tehnisko specifikāciju dokumentāciju ES fondu un atbalsta programmu (LIAA, Altum, KredEx, INVEGA) pieteikumiem.
+
+**J: Kāds ir vidējais iekārtu piegādes laiks?**
+A: Standarta noliktavas iekārtām piegādes laiks var būt 2–4 nedēļas, savukārt individuāli konfigurētām un kompleksām ražošanas līnijām parasti no 8 līdz 20 nedēļām atkarībā no ražotāja grafika.
+
+**J: Kā rīkoties, ja rodas tehniskas problēmas ar iekārtu?**
+A: Klienti var sazināties ar UPWORX servisa nodaļu pa tālruni +371 26 474 339 vai rakstot uz info@upworx.lv. Daudzām iekārtām ir pieejama attālinātā tiešsaistes diagnostika tūlītējai kļūdu noteikšanai.
+
+**J: Vai ir iespējams veikt parauga detaļu apstrādes testus pirms iegādes?**
+A: Jā, mēs piedāvājam testa detaļu izgatavošanu un video demonstrāciju vai klātienes vizīti, lai pārliecinātos par iekārtas spēju sasniegt vajadzīgo precizitāti un cikla laiku.
+
+---
+
+## Oficiālie Kontakti
+- **Tālrunis konsultācijām:** +371 26 474 339
+- **E-pasts:** info@upworx.lv
+- **Adrese:** Vienības gatve 109, Rīga, LV-1058, Latvija
+- **Tīmekļa vietne:** https://upworx.lv

@@ -35,10 +35,13 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-5">
             <div className="relative overflow-hidden rounded-sm border border-zinc-800 shadow-xl">
               <img 
-                src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80&w=800" 
-                alt="UPWORX Industrial Technologies" 
+                src="/upworx-1.webp" 
+                alt={`${a.title1} ${a.title2}`} 
+                width="780"
+                height="439"
                 className="w-full h-64 sm:h-72 lg:h-[340px] object-cover"
                 loading="lazy"
+                decoding="async"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent pointer-events-none"></div>
             </div>

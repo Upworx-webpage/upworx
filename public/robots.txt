@@ -1,7 +1,26 @@
+# Standard Search Engine Crawlers
 User-agent: *
 Allow: /
-
-# Disallow internal scripts or private query states if any
 Disallow: /api/
 
+# AI Search & LLM Agents (Generative Engine Optimization - GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap
 Sitemap: https://upworx.lv/sitemap.xml

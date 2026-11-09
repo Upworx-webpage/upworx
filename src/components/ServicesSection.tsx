@@ -37,13 +37,13 @@ export const ServicesSection: React.FC = () => {
             {s.items.map((srv, idx) => {
               const IconComponent = icons[idx] || Layers;
               return (
-                <div
+                <article
                   key={idx}
                   className="bg-white p-6 sm:p-7 border border-zinc-300 rounded-sm shadow-xs flex flex-col justify-between max-w-[320px] w-full mx-auto"
                 >
                   <div>
                     {/* Vizuāli lielāks un izteiksmīgāks simbols */}
-                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-sm bg-teal-custom/10 border border-teal-custom/30 text-teal-custom flex items-center justify-center mb-5 shrink-0 shadow-xs">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-sm bg-teal-custom/10 border border-teal-custom/30 text-teal-custom flex items-center justify-center mb-5 shrink-0 shadow-xs" aria-hidden="true">
                       <IconComponent className="w-7 h-7 sm:w-8 sm:h-8" strokeWidth={2.2} />
                     </div>
                     <h3 className="text-base sm:text-lg font-black uppercase tracking-tight text-zinc-900 mb-2 leading-snug">
@@ -53,7 +53,7 @@ export const ServicesSection: React.FC = () => {
                       {srv.desc}
                     </p>
                   </div>
-                </div>
+                </article>
               );
             })}
           </div>
