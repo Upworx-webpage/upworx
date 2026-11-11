@@ -1,13 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
 
-const StatBox: React.FC<{ value: string; label: string }> = ({ value, label }) => (
-  <div className="border-l-2 border-teal-custom pl-5 py-1">
-    <p className="text-3xl sm:text-4xl font-black text-white mb-1 tracking-tight">{value}</p>
-    <p className="text-xs text-gray-400 font-bold uppercase tracking-wider leading-snug">{label}</p>
-  </div>
-);
-
 export const AboutSection: React.FC = () => {
   const { t } = useLanguage();
   const a = t.aboutSection;
@@ -19,7 +12,7 @@ export const AboutSection: React.FC = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Divu kolonnu saturs: Teksts kreisajā pusē, samazināts attēls labajā pusē */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Kreisā puse: Virsraksti un apraksts */}
           <div className="lg:col-span-7">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tighter mb-4 leading-tight">
@@ -48,13 +41,6 @@ export const AboutSection: React.FC = () => {
           </div>
         </div>
 
-        {/* 4 Statistics Numbers */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 pt-8 border-t border-zinc-850">
-          <StatBox value="15+" label={a.stat1Label} />
-          <StatBox value="250+" label={a.stat2Label} />
-          <StatBox value="20+" label={a.stat3Label} />
-          <StatBox value="3" label={a.stat4Label} />
-        </div>
       </div>
     </section>
   );
